@@ -8,3 +8,4 @@
 6. Run the frontend server (`http-server` in `src/frontend` using the Node.js command prompt)
 7. Run the backend server (`python app.py` in `src/backend`)
 8. That's it I think (probably not)
+9. The app is on [http://localhost:8080/](http://localhost:8080/)
