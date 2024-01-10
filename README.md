@@ -10,4 +10,4 @@
 8. Run the frontend server (`http-server` in `src/frontend` using the Node.js command prompt)
 9. Run the backend server (`python app.py` in `src/backend`)
 10. That's it I think
-11. The app should be on [http://localhost:8080/](http://localhost:8080/) (or not - check what the http-server says when you turn it on)
+11. The app should be on [http://localhost.:8080/](http://localhost.:8080/) (or not - check what the http-server says when you turn it on) - make sure there is a dot between the domain/address and the colon or else Burp won't be able to intercept the traffic (it doesn't like locally hosted websites)
