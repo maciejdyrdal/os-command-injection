@@ -59,7 +59,25 @@
 
 }
 
-
-
-
 /*end banner area*/
+
+/* start about area */
+
+.site-main .about-area{
+    padding: 1rem 1rem;
+    padding-top: 7rem;
+
+}
+
+.site-main .about-area .about-title h2>span{
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+
+}
+
+
+/* end about area */

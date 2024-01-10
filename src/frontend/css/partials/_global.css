@@ -6,6 +6,10 @@
     text-transform: uppercase;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .button{
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px var(--roboto);
@@ -40,4 +44,8 @@
     border-radius: 4px;
 }
 
+p.para{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}
 
