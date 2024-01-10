@@ -28,6 +28,16 @@ def users():
         received_data = request.get_json()
         print(f"received data: {received_data}")
         message = received_data['data']
+
+        with open(os.path.dirname(__file__) + "/../../data/users.json", "r") as f:
+            file_data = json.load(f)
+
+        data_dict = {"new-data": message}
+        file_data.append(data_dict)
+
+        with open(os.path.dirname(__file__) + "/../../data/users.json", "w") as f:
+            f.write(json.dumps(file_data))
+
         return_data = {
             "status": "success",
             "message": f"received: {message}"
