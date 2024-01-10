@@ -84,16 +84,26 @@
 
 /* Start contact area*/
 
-.site-main .contact-area{
-    padding-top: 4rem;
+.site-main .contact-area .contact-title{
+    padding-top: 1rem;
 
 }
 
+.site-main .contact-area .contact-image > img{
+    padding: 4rem 0;
+    width: 90rem;
+}
+
 .site-main .contact-area .contact-title h2>span{
+    
     display: block;
     font: normal bold 49px/60px var(--roboto);
 }
 
-
-
 /* End contact area*/
+
+/* Start h&l area */
+
+
+
+/* End h&l area */
