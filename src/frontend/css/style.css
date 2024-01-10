@@ -5,6 +5,9 @@
 /* CSS variables */
 @import url(./partials/_variables.css);
 
+/* global styling */
+@import url(./partials/_global.css);
+
 /*start navigation*/
 
 .header_area .main-menu .navbar .navbar-brand{
@@ -35,14 +38,28 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+/*end navigation*/
+
+/*start banner area*/
 
 .site-main .container .row .title-text{
     text-align: center;
-}   
+    font-weight: 500;
+    font-size: 3rem;
+}
 
-.site-main .container .row .site-buttons{
-    text-align: center;
-}  
+.site-main .container .row .first-line{
+    padding-top: 20%;
+} 
 
 
-/*end navigation*/
+.site-main .container .row .banner-image > img{
+    padding: 4rem 0;
+    width: 90rem;
+
+}
+
+
+
+
+/*end banner area*/
