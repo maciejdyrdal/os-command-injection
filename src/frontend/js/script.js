@@ -89,3 +89,23 @@ function runCommand() {
     // Send the request over the network
     xhr.send(JSON.stringify({"var1": dataToSend1, "var2": dataToSend2}));
 }
+
+function sendForm() {
+    dataName = document.getElementById('fname').value;
+    dataLastName = document.getElementById('lname').value;
+    if (!dataName || !dataLastName) {
+        console.log("Data is empty.");
+        return;
+    }
+
+    console.log("Sending data: " + dataName + " " + dataLastName);
+    xhr = getXmlHttpRequestObject();
+    xhr.onreadystatechange = sendDataCallback;
+
+    // asynchronous requests
+    xhr.open("POST", "http://localhost:6060/form", true);
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+    // Send the request over the network
+    xhr.send(JSON.stringify({"name": dataName, "last_name": dataLastName}));
+}
