@@ -86,6 +86,7 @@
 
 .site-main .contact-area .contact-title{
     padding-top: 1rem;
+    padding-bottom: 3rem;
 
 }
 
@@ -95,7 +96,6 @@
 }
 
 .site-main .contact-area .contact-title h2>span{
-    
     display: block;
     font: normal bold 49px/60px var(--roboto);
 }
