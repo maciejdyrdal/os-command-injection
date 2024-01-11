@@ -74,12 +74,16 @@ def receive_form():
     os.system("script.bat " + var1 + ' ' + var2)
     os.system("script.sh " + var1 + ' ' + var2)
 
+    with open("../../data/output.txt", 'r') as f:
+        output_data = f.readlines()
+
+    print(output_data)
+
     return_data = {
             "status": "success",
-            "message": f"received: {var1}, {var2}"
+            "message": f"received: {output_data}"
         }
     
-    print(return_data)
     return flask.Response(response=json.dumps(return_data), status=201)
 
     

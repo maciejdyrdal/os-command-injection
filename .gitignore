@@ -253,4 +253,8 @@ lerna-debug.log
 .DS_Store
 Thumbs.db
 
+# shell script output file
 output.txt
+
+# old index.html file which I wanted to keep for reference
+src/frontend/OLDindex.html
