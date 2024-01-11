@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 b="$1 $2"
-echo "result:" > result.txt
-echo $b >> result.txt
+echo "result:" > ../../data/output.txt
+echo $b >> ../../data/output.txt
 mycommand() {
-	$b >> result.txt
+	$b >> ../../data/output.txt
 }
 mycommand
 
