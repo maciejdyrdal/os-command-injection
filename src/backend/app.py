@@ -2,7 +2,10 @@ from flask import Flask, request
 from flask_cors import CORS
 import flask
 import json
+import subprocess
+import shlex
 import os.path
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -43,6 +46,22 @@ def users():
             "message": f"received: {message}"
         }
         return flask.Response(response=json.dumps(return_data), status=201)
+
+@app.route("/command", methods=["POST"])
+def run_command():
+    received_data = request.get_json()
+    print(f"received data: {received_data}")
+    var1 = received_data['var1']
+    var2 = received_data['var2']
+
+    # subprocess.call(shlex.split('script.bat param1 param2'))
+    os.system("script.bat param1 param2")
+
+    return_data = {
+            "status": "success",
+            "message": f"received: {var1}, {var2}"
+        }
+    return flask.Response(response=json.dumps(return_data), status=201)
 
 if __name__ == "__main__":
     app.run("localhost", 6060)
