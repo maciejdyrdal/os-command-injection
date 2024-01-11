@@ -14,6 +14,9 @@
     
         <!-- custom css file -->
         <link rel="stylesheet" href="./css/style.css">
+
+        <!-- javascript file -->
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
 <body>
      <!-- ================================ Start Header Area ==================================-->
@@ -78,10 +81,13 @@
                             <label for="accidentCounter" class="form-text">Sprawdź ile było wypadków samolotów od początku 2024:</label>
 
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">Sprawdź</button>
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase" onclick="crashPlane()">Sprawdź</button>
+                                
+                            
 
 
                             </div>
+                        <div id="plane-crash-count"></div>
                         </div>
                     </div>
                 </div>

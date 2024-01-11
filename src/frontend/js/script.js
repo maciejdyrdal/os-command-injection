@@ -4,6 +4,7 @@ function clickOfferButton()
 }
 
 var xhr = null;
+var planeCrashes = 0;
 
 getXmlHttpRequestObject = function () {
     if (!xhr) {
@@ -43,4 +44,10 @@ function sendFormCallback() {
         textToSet = "Data received by server: " + xhr.responseText.split('received')[1].slice(3).slice(0, -3);
         dataDiv.innerHTML = textToSet;
     }
+}
+
+function crashPlane() {
+    crashCounter = document.getElementById('plane-crash-count');
+    ++planeCrashes;
+    crashCounter.innerHTML = planeCrashes;
 }
