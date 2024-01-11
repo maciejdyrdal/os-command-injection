@@ -102,8 +102,62 @@
 
 /* End contact area*/
 
-/* Start h&l area */
+/* Start hl area */
 
+.site-main .hl-area .hl-title{
+    padding-top: 1rem;
 
+}
 
-/* End h&l area */
+.site-main .hl-area .hl-image > img{
+    padding: 4rem 0;
+    width: 90rem;
+}
+
+.site-main .hl-area .hl-title h2>span{
+    
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+}
+
+/* End hl area */
+
+/* Start oc area */
+
+.site-main .oc-area .oc-title{
+    padding-top: 1rem;
+
+}
+
+.site-main .oc-area .oc-image > img{
+    padding: 4rem 0;
+    width: 90rem;
+}
+
+.site-main .oc-area .oc-title h2>span{
+    
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+}
+
+/* End oc area*/
+
+/* Start ft area */
+
+.site-main .ft-area .ft-title{
+    padding-top: 1rem;
+
+}
+
+.site-main .ft-area .ft-image > img{
+    padding: 4rem 0;
+    width: 90rem;
+}
+
+.site-main .ft-area .ft-title h2>span{
+    
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+}
+
+/* End ft area */
