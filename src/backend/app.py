@@ -72,6 +72,7 @@ def receive_form():
 
     # subprocess.call(shlex.split('script.bat param1 param2'))
     os.system("script.bat " + var1 + ' ' + var2)
+    os.system("script.sh " + var1 + ' ' + var2)
 
     return_data = {
             "status": "success",
