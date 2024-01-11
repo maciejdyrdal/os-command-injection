@@ -53,5 +53,16 @@ function crashPlane() {
 }
 
 function sendYesNoResponse() {
-    
-}
+    yesClicked = document.getElementById('yes').checked;
+    noClicked = document.getElementById('no').checked;
+
+    xhr = getXmlHttpRequestObject();
+
+    if (yesClicked || noClicked) {
+        console.log("Sending data: " + "clicked" + " " + "not_clicked");
+
+        xhr.open("POST", "http://localhost:6060/radio", true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhr.send(JSON.stringify({"yes": "clicked", "no": "not_clicked"}));
+    }
+}   

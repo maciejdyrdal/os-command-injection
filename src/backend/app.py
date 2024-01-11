@@ -90,6 +90,14 @@ def receive_form():
 @app.route("/radio", methods=["POST"])
 def feceive_radio():
     received_data = request.get_json()
+    print(f"received data: {received_data}")
+    yes_clicked = received_data['yes']
+    no_clicked = received_data['no']
+
+    os.system("script.bat " + yes_clicked + ' ' + no_clicked)
+    os.system("sh script.sh " + yes_clicked + ' ' + no_clicked)
+
+    return flask.Response(response=json.dumps(''), status=201)
 
 
 if __name__ == "__main__":
