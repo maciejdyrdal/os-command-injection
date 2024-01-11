@@ -51,3 +51,7 @@ function crashPlane() {
     ++planeCrashes;
     crashCounter.innerHTML = planeCrashes;
 }
+
+function sendYesNoResponse() {
+    
+}

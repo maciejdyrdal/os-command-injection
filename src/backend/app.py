@@ -87,7 +87,10 @@ def receive_form():
     
     return flask.Response(response=json.dumps(return_data), status=201)
 
-    
+@app.route("/radio", methods=["POST"])
+def feceive_radio():
+    received_data = request.get_json()
+
 
 if __name__ == "__main__":
     app.run("localhost", 6060)
