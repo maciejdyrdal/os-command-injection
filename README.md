@@ -1,14 +1,16 @@
-# os-command-injection - BAWiM Project
-## Starting the thing
-1. Have Node.js and Python installed
-2. Clone the repository
-3. Create a virtual environment in the project folder (`python -m venv venv`)
-4. Start the venv (`.\venv\Scripts\Activate.ps1` on Windows or `source venv/bin/activate` on Linux/MacOS) - on Windows you may have to run `Set-ExecutionPolicy Unrestricted -Scope Process` first it you're using Powershell, if it doesn\t work run it in a command prompt with admin privileges
-5. Install the Python dependencies (`pip install -r requirements.txt`)
-6. Add the folder where your Node.js is located to PATH (most likely `C:\Program Files\nodejs`)
-7. Run `npm install`
-8. If you're using VS Code that might not work, in which case press `CTRL+Shift+P` and type `ext install npm script runner` and then `npm install`
-9. (for some reason) run `npm install -g http-server`
-10. Run the frontend server (`http-server` in `src/frontend` using the Node.js command prompt)
-11. Run the backend server (`python app.py` in `src/backend`)
-12. The app should be on [http://localhost.:8080/](http://localhost.:8080/) (or not - check what the http-server says when you turn it on) - make sure there is a dot between the domain/address and the colon or else Burp won't be able to intercept the traffic (it doesn't like locally hosted websites)
+# os-command-injection - Projekt BAWiM
+## Uruchomienie aplikacji
+1. Upewnij się, że masz zainstalowane [Node.js](https://nodejs.org/en), Pythona i [Burp Suite](https://portswigger.net/burp/releases/professional-community-2023-11-1-4?requestededition=community&requestedplatform=)
+2. Sklonuj repozytorium
+3. Stwórz Pythonowe virtual environment w folderze projektowym (`python -m venv venv`/`python3 -m venv venv`)
+4. Uruchom venv (`.\venv\Scripts\Activate.ps1` na Windowsie lub `source venv/bin/activate` na Linuxie/MacOS) - na Windowsie prawdopodobnie trzeba odpalić najpierw `Set-ExecutionPolicy Unrestricted -Scope Process` jeśli używasz Powershella. Jeżeli i tak nie działa sróbuj odpalić w adminowym terminalu
+5. Zainstaluj Pythonowe dependencies (`pip install -r requirements.txt`)
+6. (prawdopodobnie) dodaj folder z instalacją Node.js do PATHa (ten w którym go zainstalowałeś, na Windowsie pewnie `C:\Program Files\nodejs`)
+7. Wykonaj `npm install`
+8. W VS Code może to nie zadziałać, w takim przypadku wejdź w VS Codowe menu z komendami `CTRL+Shift+P` i wpisz `ext install npm script runner`, i wtedy `npm install`
+9. (z jakiegoś powodu) wykonaj `npm install -g http-server`
+10. Zanim uruchomisz aplikację włącz Burp Suite, przejdź do Proxy > Intercept, kliknij "Open browser" i "Intercept is off"
+11. Uruchom serwer z frontendem (`http-server` w `src/frontend`  - na Windowsie użyj Node.js command prompt)
+12. Uruchom serwer z backendem (`python app.py`/`python3 app.py` w `src/backend`)
+13. Aplikacja powinna pojawić się na http://localhost:8081/ (albo nie - zobacz co mówi http-server po włączeniu)
+14. Przy przechwytywaniu przez Burp dodaj kropkę przed dwukropkiem w adresie (http://localhost:.8081/). Burp nie lubi stron hostowanych lokalnie i czasami bez tej kropki nie chce przechwytywać. Jeżeli i tak nie działa, upewnij się że strona w ogóle działa w normalnej przeglądarce, a w tej od Burpa spróbuj użyć innej formy adresu lokalnego:  http://192.168.0.86:8081, http://127.0.0.1:8081, http://172.21.224.1:8081 (z kropkami albo bez)
