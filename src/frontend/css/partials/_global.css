@@ -17,7 +17,7 @@
     border: 3px solid transparent;
     border-radius: 4px;
     text-align: center;
-    margin: auto;
+    /*margin: auto;*/
 }
 
 .button.primary-button{
@@ -46,6 +46,10 @@
 
 p.para{
     color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}
+
+.form-text{
     font: normal 500 16px/25px var(--roboto);
 }
 

@@ -115,9 +115,13 @@
 }
 
 .site-main .hl-area .hl-title h2>span{
-    
     display: block;
     font: normal bold 49px/60px var(--roboto);
+}
+
+.site-main .hl-area .hl-selection{
+    padding: 1rem 7rem;
+    padding-bottom: 15%;
 }
 
 /* End hl area */
