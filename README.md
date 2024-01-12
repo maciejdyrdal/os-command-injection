@@ -13,8 +13,7 @@
 11. Uruchom serwer z frontendem (`http-server` w `src/frontend`  - na Windowsie użyj Node.js command prompt)
 12. Uruchom serwer z backendem (`python app.py`/`python3 app.py` w `src/backend`)
 13. Aplikacja powinna pojawić się na http://localhost:8081/ (albo nie - zobacz co mówi http-server po włączeniu)
-14. Przy przechwytywaniu przez Burp dodaj kropkę przed dwukropkiem w adresie (http://localhost:.8081/). Burp nie lubi stron hostowanych lokalnie i czasami bez tej kropki nie chce przechwytywać. Jeżeli i tak nie działa, upewnij się że strona w ogóle działa w normalnej
-15. przeglądarce, a w tej od Burpa spróbuj użyć innej formy adresu lokalnego:  http://192.168.0.86:8081, http://127.0.0.1:8081, http://172.21.224.1:8081 (z kropkami albo bez)
+14. Przy przechwytywaniu przez Burp dodaj kropkę przed dwukropkiem w adresie (http://localhost:.8081/). Burp nie lubi stron hostowanych lokalnie i czasami bez tej kropki nie chce przechwytywać. Jeżeli i tak nie działa, upewnij się że strona w ogóle działa w normalnej przeglądarce, a w tej od Burpa spróbuj użyć innej formy adresu lokalnego:  http://192.168.0.86:8081, http://127.0.0.1:8081, http://172.21.224.1:8081 (z kropkami albo bez)
 
 # WSZYSTKIE INJECTOWANE KOMENDY BĘDĄ WYKONYWANE NA TWOIM KOMPUTERZE, WIĘC NIE WYKONUJ DESTRUKTYWNYCH KOMEND!
 
