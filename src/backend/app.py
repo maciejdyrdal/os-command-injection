@@ -74,7 +74,12 @@ def receive_form():
     os.system("script.bat " + var1 + ' ' + var2)
     os.system("sh src/backend/script.sh " + var1 + ' ' + var2)
 
-    with open("data/output.txt", 'r') as f:
+    path_to_file = ''
+    if os.getcwd().rsplit('/', 1)[-1] == "os-command-injection":
+        path_to_file = os.getcwd() + r"/src/backend"
+
+    print(path_to_file)
+    with open((path_to_file + "/../../data/output.txt"), 'r') as f:
         output_data = f.readlines()
 
     print(output_data)
