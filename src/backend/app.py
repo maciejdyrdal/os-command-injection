@@ -72,10 +72,9 @@ def receive_form():
 
     # subprocess.call(shlex.split('script.bat param1 param2'))
     os.system("script.bat " + var1 + ' ' + var2)
-    os.system("sh script.sh " + var1 + ' ' + var2)
-    os.system("pwd")
+    os.system("sh src/backend/script.sh " + var1 + ' ' + var2)
 
-    with open("../../data/output.txt", 'r') as f:
+    with open("data/output.txt", 'r') as f:
         output_data = f.readlines()
 
     print(output_data)
