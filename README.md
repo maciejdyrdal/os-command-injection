@@ -28,14 +28,18 @@
 3. sleep 5
 
 ## Zadanie 1: Prosty przypadek OS command injection
-Znajdź podatność na stronie. Wykorzystaj Burp Suite.
+Znajdź podatność na jednej z podstron. Wykorzystaj Burp Suite do przechwycenia jednego z requestów, a następnie podejrzyj i podmień jego treść.
 Serwer wykonuje skrypt z wykorzystaniem wartości podanych przez użytkownika.
 Wykonaj komendę - jej raw output powinien pojawić się w response.
+
+Podpowiedź: dowiedz się, jak zrobić komentarz w pliku .bat/.sh (w zależności od twojego systemu).
 
 Na Upel wyślij screena Burp Suite'a z podmienionym requestem i responsem z wynikiem komendy.
 
 ## Zadanie 2: Ślepe szukanie podatności
-Znajdź inną podatność na stronie - w tym zadaniu w response nie uzyskasz wyniku komendy, dlatego musisz w inny sposób sprawdzić czy input jest podatny na OS command injection.
+Znajdź inną podatność na innej z podstron - w tym zadaniu w response nie uzyskasz wyniku komendy, dlatego musisz w inny sposób sprawdzić czy input jest podatny na OS command injection.
+
+Podpowiedź: popatrz na przykładowe komendy podane wyżej; efekty wykonania której z nich zobaczysz po wykonaniu na serwerze nawet bez dostępu do jej outputu?
 
 Na Upel wyślij screena Burp Suite'a z podmienionym requestem.
 
@@ -43,8 +47,9 @@ Na Upel wyślij screena Burp Suite'a z podmienionym requestem.
 Wykorzystaj podatność znalezioną w poprzednim zadaniu. W tym zadaniu będziesz musiał przekazać wynik komendy do pliku, który następnie trzeba "zrequestować" - uzyskać dostęp do interesującej nas zawartości tego pliku poprzez innego requesta.
 
 Informacja i podpowiedź:
-Zadanie można wykonać nawet bez znajomości katalogu serwera: Jedyną potrzebną informacją jest ścieżka do folderu "img".
-W tym przypadku to: "../src/frontend/img"
+Zadanie można wykonać nawet bez znajomości katalogu serwera: Jedyną potrzebną informacją jest ścieżka do folderu "img".  
+W tym przypadku to: "os-command-injection/src/frontend/img/"  
+W zależności od twojego systemu możliwe jest, że będzie trzeba pobawić się ścieżkami (na różnych systemach relatywne ścieżki mogą być inne)
 
 Na Upel wyślij screeny Burp Suite'a z wszystkimi podmienionymi requestami i responsem z wynikiem komendy.
 
