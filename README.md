@@ -22,7 +22,7 @@
 2. dir
 3. timeout 5
 
-## Przykładowe niedestruktywne komendy na Linux:
+## Przykładowe niedestruktywne komendy na Unix:
 1. whoami
 2. ls
 3. sleep 5
