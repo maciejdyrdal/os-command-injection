@@ -29,11 +29,17 @@
 3. sleep 5
 
 ## Zadanie 1: Prosty przypadek OS command injection
-Znajdź podatność na stronie. Wykorzystaj Burp Suite. W response powinien pojawić się wynik komendy.
+Znajdź podatność na stronie. Wykorzystaj Burp Suite.
+Aplikacja wykonuje skrypt z wykorzystaniem wartości podanych przez użytkownika.
+Wykonaj komendę - jej raw output powinien pojawić się w response.
 
 ## Zadanie 2: Ślepe szukanie podatności
-Znajdź inną podatność na stronie - w tym zadaniu w response nie uzyskasz wyniku komendy, dlatego musisz w inny sposób sprawdzić czy input jest podatny na OS command injection
+Znajdź inną podatność na stronie - w tym zadaniu w response nie uzyskasz wyniku komendy, dlatego musisz w inny sposób sprawdzić czy input jest podatny na OS command injection.
 
 ## Zadanie 3: Inny sposób na otrzymanie wyniku komendy
 Wykorzystaj podatność znalezioną w poprzednim zadaniu. W tym zadaniu będziesz musiał przekazać wynik komendy do pliku, który następnie trzeba "zrequestować" - uzyskać dostęp do interesującej nas zawartości tego pliku poprzez innego requesta.
+
+Informacja i podpowiedź:
+Zadanie można wykonać nawet bez znajomości katalogu serwera: Jedyną potrzebną informacją jest ścieżka do folderu "img".
+W tym przypadku to: "../src/frontend/img"
 
