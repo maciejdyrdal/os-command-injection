@@ -77,6 +77,8 @@ def receive_form():
     path_to_file = ''
     if os.getcwd().rsplit('/', 1)[-1] == "os-command-injection":
         path_to_file = os.getcwd() + r"/src/backend"
+    else:
+        path_to_file = os.getcwd()
 
     print(path_to_file)
     with open((path_to_file + "/../../data/output.txt"), 'r') as f:
