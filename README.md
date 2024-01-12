@@ -30,7 +30,7 @@
 
 ## Zadanie 1: Prosty przypadek OS command injection
 Znajdź podatność na stronie. Wykorzystaj Burp Suite.
-Aplikacja wykonuje skrypt z wykorzystaniem wartości podanych przez użytkownika.
+Serwer wykonuje skrypt z wykorzystaniem wartości podanych przez użytkownika.
 Wykonaj komendę - jej raw output powinien pojawić się w response.
 
 ## Zadanie 2: Ślepe szukanie podatności
