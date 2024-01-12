@@ -38,11 +38,10 @@ function sendFormCallback() {
     // Check response is ready or not
     if (xhr.readyState == 4 && xhr.status == 201) {
         console.log("Form data response received!");
-        // getDate();
         dataDiv = document.getElementById('sent-form-data-container');
         // Set current data text
         textToSet = "Data received by server: " + xhr.responseText.split('received')[1].slice(3).slice(0, -3);
-        dataDiv.innerHTML = textToSet;
+        // dataDiv.innerHTML = textToSet;
     }
 }
 
