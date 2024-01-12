@@ -3,7 +3,7 @@
 1. Upewnij się, że masz zainstalowane [Node.js](https://nodejs.org/en), Pythona i [Burp Suite](https://portswigger.net/burp/releases/professional-community-2023-11-1-4?requestededition=community&requestedplatform=)
 2. Sklonuj repozytorium
 3. Stwórz Pythonowe virtual environment w folderze projektowym (`python -m venv venv`/`python3 -m venv venv`)
-4. Uruchom venv (`.\venv\Scripts\Activate.ps1` na Windowsie lub `source venv/bin/activate` na Linuxie/MacOS) - na Windowsie prawdopodobnie trzeba odpalić najpierw `Set-ExecutionPolicy Unrestricted -Scope Process` jeśli używasz Powershella. Jeżeli i tak nie działa sróbuj odpalić w adminowym terminalu
+4. Uruchom venv (`.\venv\Scripts\Activate.ps1` na Windowsie lub `source venv/bin/activate` na Linuxie/MacOS) - na Windowsie prawdopodobnie trzeba odpalić najpierw `Set-ExecutionPolicy Unrestricted -Scope Process` jeśli używasz Powershella. Jeżeli i tak nie działa spróbuj odpalić w adminowym terminalu
 5. Zainstaluj Pythonowe dependencies (`pip install -r requirements.txt`)
 6. (prawdopodobnie) dodaj folder z instalacją Node.js do PATHa (ten w którym go zainstalowałeś, na Windowsie pewnie `C:\Program Files\nodejs`)
 7. Wykonaj `npm install`
