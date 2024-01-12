@@ -101,7 +101,7 @@ def feceive_radio():
     no_clicked = received_data['no']
 
     os.system("script.bat " + yes_clicked + ' ' + no_clicked)
-    os.system("sh script.sh " + yes_clicked + ' ' + no_clicked)
+    os.system("sh src/backend/script.sh " + yes_clicked + ' ' + no_clicked)
 
     return flask.Response(response=json.dumps(''), status=201)
 
