@@ -33,8 +33,12 @@ Znajdź podatność na stronie. Wykorzystaj Burp Suite.
 Serwer wykonuje skrypt z wykorzystaniem wartości podanych przez użytkownika.
 Wykonaj komendę - jej raw output powinien pojawić się w response.
 
+Na Upel wyślij screena Burp Suite'a z podmienionym requestem i responsem z wynikiem komendy.
+
 ## Zadanie 2: Ślepe szukanie podatności
 Znajdź inną podatność na stronie - w tym zadaniu w response nie uzyskasz wyniku komendy, dlatego musisz w inny sposób sprawdzić czy input jest podatny na OS command injection.
+
+Na Upel wyślij screena Burp Suite'a z podmienionym requestem.
 
 ## Zadanie 3: Inny sposób na otrzymanie wyniku komendy
 Wykorzystaj podatność znalezioną w poprzednim zadaniu. W tym zadaniu będziesz musiał przekazać wynik komendy do pliku, który następnie trzeba "zrequestować" - uzyskać dostęp do interesującej nas zawartości tego pliku poprzez innego requesta.
@@ -42,4 +46,7 @@ Wykorzystaj podatność znalezioną w poprzednim zadaniu. W tym zadaniu będzies
 Informacja i podpowiedź:
 Zadanie można wykonać nawet bez znajomości katalogu serwera: Jedyną potrzebną informacją jest ścieżka do folderu "img".
 W tym przypadku to: "../src/frontend/img"
+
+Na Upel wyślij screeny Burp Suite'a z wszystkimi podmienionymi requestami i responsem z wynikiem komendy.
+
 
