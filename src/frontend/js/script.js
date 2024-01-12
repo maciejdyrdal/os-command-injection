@@ -65,3 +65,10 @@ function sendYesNoResponse() {
         xhr.send(JSON.stringify({"yes": "clicked", "no": "not_clicked"}));
     }
 }   
+
+function availableOrNot() {
+    options = ['Som :DDD', 'Ni ma :CCCC'];
+    divElement = document.getElementById('available-or-not');
+    textToDisplay = options[Math.floor(Math.random() * options.length)];
+    divElement.innerHTML = textToDisplay;
+}
